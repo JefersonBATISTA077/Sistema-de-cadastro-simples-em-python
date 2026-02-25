@@ -18,7 +18,7 @@ class Pessoa:
                 self.idade = int(input('Digite a idade: '))
 
                 if self.idade <= 0 :
-                    print('Você também precisa digitar a idade!')
+                    print('A idade deve ser maior que zero!')
                     continue
                 break
 
@@ -46,3 +46,5 @@ for i in range(quantidade):
 print('\nPessoas cadastradas:')
 for pessoa in pessoas:
     print(f'Nome: {pessoa.nome} | Idade: {pessoa.idade}')
+
+fim = input('\nPressione Enter para finalizar o programa...')
